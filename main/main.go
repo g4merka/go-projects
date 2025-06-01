@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	nums := []int{3, 6, 2}
-	fmt.Println(findSmallest(nums))
+	fmt.Println(ExpressionMatter(3, 5, 6))
 }
-func findSmallest(arr []int) []int {
-	return arr[len(arr)-1]
+
+func ExpressionMatter(a, b, c int) [3]int {
+		return [3]int{a, b, c}
 }
