@@ -1,13 +1,11 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(ExpressionMatter(3, 5, 6))
-}
+	str := "abba"
+	runes := []rune(str)
 
-func ExpressionMatter(a, b, c int) [3]int {
-		return [3]int{a, b, c}
+	res := runes[1]+runes[2]
+	fmt.Println(runes[1], runes[2], res)
 }
